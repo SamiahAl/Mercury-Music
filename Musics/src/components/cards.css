@@ -1,0 +1,185 @@
+@-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+  .music-card { 
+      
+      margin-top: 70px; 
+      margin-right: 20px;
+      margin-left: 30px;
+      align-content: center;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #5e5d5d;
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background-origin: inherit;
+  }
+  .music-card > .image img {
+      
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+    height: 300px;
+    width: 350px;
+  }
+  .music-card > .image:after {
+      
+    height: 100px;
+    content: '';
+    top: 200px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 65, 127, 0)), to(#ed2553));
+    background: linear-gradient(rgba(221, 65, 127, 0), #d84064);
+    /* #DD417F */
+  }
+  .music-card > .wave {
+      
+    position: absolute;
+    height: 750px;
+    width: 750px;
+    opacity: 0.6;
+    margin-left: -70%;
+    margin-top: -130%;
+    border-radius: 40%;
+    background: radial-gradient(rgb(134, 90, 151), #ed2553);
+     /* F44336 */
+    /* background: radial-gradient(rgb(34, 15, 0), rgb(9, 8, 73)); */
+    -webkit-animation:  3000ms infinite linear;
+            animation:  3000ms infinite linear;
+  }
+  .music-card > .wave:nth-child(2) {
+    top: 10px;
+    -webkit-animation:  4000ms infinite linear;
+            animation:  4000ms infinite linear;
+  }
+
+  .music-card > .wave:nth-child(3) {
+    top: 10px;
+    -webkit-animation:  5000ms infinite linear;
+            animation:  5000ms infinite linear;
+  }
+  
+  .music-card > .info {
+      
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .music-card > .info > .title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'RobotoDraft', 'Roboto', sans-serif;
+    color: rgb(211, 204, 203);
+    margin-bottom: 8px;
+  }
+  
+   .text-primary{
+    font-size: 10px;
+    font-family: 'RobotoDraft', 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 8px;
+   }
+
+  .music-card > .info > .artist {
+    font-family: 'RobotoDraft', 'Roboto', sans-serif;
+    color: #cfcfcf;
+    font-size: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  /* ------------------------------ HEADER --------------------- */
+
+ 
+    .container {
+      width: 100%;
+      padding: 20px;
+      overflow: hidden;
+      max-width: 600px;
+      /* ---------- */
+      float:left;
+      width:100%;
+      color:#fff;
+      height:calc(100% - 3em);
+      }
+     .test{
+      margin:  15px ;
+      } 
+  
+/* =================================================== */
+
+/* 
+#banner {
+  text-align: center;
+  padding: 20px;
+}
+#banner  {
+  width: 100%;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+}
+#banner  {
+  font-size: 13px;
+} */
+/* #banner   {
+  font-size: 26px;
+}
+
+#banner {
+  background-color: #280b45;
+}
+#banner  {
+  float: left;
+  width: 65px;
+  height: 35px;
+  padding: 10px;
+  line-height: 35px;
+  text-decoration: none;
+  color: white;
+}
+ */
+
+ /* ================================= */
+
+ @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+ @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+ 
+ [class*="fontawesome-"]:before {
+   font-family: 'FontAwesome', sans-serif;
+ }
+ 
+ 
+/*  
+ .container .navbar-brand{
+   max-width: 60em;
+   min-width: 45em; 
+   margin: 0 auto;
+   padding: 0 2em; 
+ } */
+ /* ================================== */
+ 
